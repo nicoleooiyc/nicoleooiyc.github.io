@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mental Health & Well-Being</title>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #FEFFFA; }
+    header { background: #697E50; padding: 20px; color: white; text-align: center; }
+
+    nav { display: flex; justify-content: center; gap: 20px; background: #C3C993; padding: 10px; }
+    nav a { text-decoration: none; color: #697E50; font-weight: bold; cursor: pointer; }
+    nav a.active { border-bottom: 3px solid #697E50; padding-bottom: 3px; }
+
+    section { padding: 40px 20px; display: none; }
+    section.active { display: block; }
+
+    h2 { color: #697E50; }
+    h3 { color: #697E50; }
+    h4 { color: #5e7d0b; } 
+    
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 20px; }
+    .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+
+    .center-img {
+      display: block; 
+      margin: 20px auto; 
+      width: 100%; 
+      max-width: 700px;
+      height: auto; 
+      border-radius: 10px; 
+    }
+
+    form { max-width: 400px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+    input, textarea, select { padding: 10px; border-radius: 5px; border: 1px solid #aaa; }
+    button { padding: 10px; background: #C3C993; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    
+    #feedback h2 {
+      text-align: center;
+    }
+
+    #feedback p {
+      text-align: center;
+      max-width: 600px; 
+      margin: 0 auto 20px auto; 
+    }
+    
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mental Health & Well-Being</h1>
+    <p>Supporting people with awareness, knowledge, and healthy habits</p>
+  </header>
+
+  <nav>
+    <a data-page="what" class="active">What Is Mental Health?</a>
+    <a data-page="challenges">Common Challenges</a>
+    <a data-page="improve">Improve Well-Being</a>
+    <a data-page="feedback">Feedback</a>
+  </nav>
+
+  <!-- WHAT IS MENTAL HEALTH -->
+  <section id="what" class="active fade-up show">
+    <h2>What Is Mental Health?</h2>
+    <p><ins><b>Mental health is the emotional, psychological, and social well-being that impacts how you think, feel, and act.</ins>
+  It enables you to cope with life's stresses, realize your potential, learn and work well, and contribute to your community. Good mental health is more than just the absence of a mental illness and is crucial for your overall quality of life. </b></p>
+
+    <h3>Myths & Facts</h3>
+    <div class="card-grid">
+      <div class="card"><h4>Myth</h4><p><b><i>“Mental health problems are rare.”</i></b></p><hr><h4>Fact</h4><p>Mental health conditions are common. According to the NIH(National Institutes of Health), about 1 in 4 people will experience a mental or neurological disorder at some point. In cancer patients, emotional challenges like anxiety and depression are even more frequent, and addressing them is just as important as treating the physical disease.</p></div>
+      <div class="card"><h4>Myth</h4><p><b><i>“Having a mental illness is a sign of weakness.”</i></b></p><hr><h4>Fact</h4><p>Mental health challenges are not about strength or weakness. They are health conditions influenced by a mix of genetics, life experiences, biology, and environment. It takes immense strength and courage to ask for help and work toward recovery.</p></div>
+      <div class="card"><h4>Myth</h4><p><b><i>“If someone looks okay, they are okay.”</i></b></p><hr><h4>Fact</h4><p>Mental health challenges are often invisible. Always check on your friends and loved ones even if they say they are okay.</p></div>
+      <div class="card"><h4>Myth</h4><p><b><i>“Suicidal thoughts should be kept private.”</i></b></p><hr><h4>Fact</h4><p>If you are thinking about harming yourself or feeling hopeless, you are not alone, and you deserve support. These feelings are not a burden to share. Telling your healthcare team and loved ones can open the door to treatments and therapies that save lives.</p></div>
+    </div>
+    
+    <!-- Moved the image tag outside the .card-grid div -->
+    <img 
+      src="https://img.freepik.com/free-vector/hand-drawn-mental-health-social-media-cover-template_23-2149055030.jpg?semt=ais_hybrid&w=740&q=80"
+      class="center-img"
+      alt="Mental Health Awareness"
+    >
+  </section>
+
+  <!-- COMMON CHALLENGES -->
+  <section id="challenges" class="fade-up">
+    <h2>Common Mental Health Challenges</h2>
+    <p><b>Nearly 1 in 7 people worldwide live with a mental disorder, which can take many different forms and, if left untreated, may severely disrupt daily life and cause long-term suffering; although effective prevention and treatment options exist, most people still do not have access to the care they need. <br> 
+    <br>
+    According to WHO (World Health Organization), in 2021 nearly 1 in every 7 people (1.1 billion) around the world were living with a mental disorder, with anxiety and depressive disorders the most common (1). While effective prevention and treatment options exist, most people with mental disorders do not have access to effective care. Many people also experience stigma, discrimination and violations of human rights. <br>
+    </b></p><br>
+    <h2>Examples of common mental health challenges includes...</h2>
+      
+    <div class="card-grid">
+      <div class="card"><h4>Stress</h4><hr><p>Often appears as the body’s natural response to pressure, developing when school, work, relationships, or personal expectations create demands that feel too heavy to manage, causing both emotional tension and physical strain.</p></div>
+      <div class="card"><h4>Anxiety</h4><hr><p>Involves persistent worry and physical tension that can interfere with normal activities, causing feelings of restlessness, irritability, a constant sense of unease, and often leading to difficulties in concentrating, completing work or school tasks, and maintaining social relationships.</p></div>
+      <div class="card"><h4>Depression</h4><hr><p>Diminish mood, energy, and motivation, often causing persistent sadness, fatigue, and a sense of hopelessness, which can make even simple daily tasks such as getting out of bed, preparing meals, or completing schoolwork feel overwhelming and difficult to manage.</p></div>
+      <div class="card"><h4>Burnout</h4><hr><p>Develops after long periods of chronic stress, gradually eroding emotional resilience and mental stamina, and ultimately leading to profound emotional exhaustion, a sense of detachment from work or personal life, and decreased engagement in activities that once felt meaningful or enjoyable.</p></div>
+      <div class="card"><h4>Eating disorders</h4><hr><p>Disrupts healthy attitudes toward food and body image, often leading to serious physical and emotional consequences, as well as challenges in daily functioning and social relationships.</p></div>
+      <div class="card"><h4>Post-traumatic stress disorder (PTSD)</h4><hr><p>Can be develop after experiencing or witnessing traumatic events, causing persistent anxiety, intrusive memories, emotional distress, and difficulties in maintaining normal routines or relationships.</p></div>
+    </div>
+       <img 
+      src="https://www.eurokidsindia.com/blog/wp-content/uploads/2023/09/anxiety-in-children-870x570.jpg"
+      class="center-img"
+      alt="Common Mental Health Challenges"
+    >
+  </section>
+
+  <!-- IMPROVE WELL-BEING -->
+  <section id="improve" class="fade-up">
+    <h2>How to Improve Mental Well-Being</h2>
+    <p><b>There are many methods to maintaining mental well-being involves developing consistent habits and strategies that support emotional balance, reduce stress, and improve overall one's quality of life.</b></p>
+    <h2>Examples of methods to impove mental well-being includes...</h2>
+    <div class="card-grid">
+      <div class="card"><h3>Healthy Daily Habits</h3><hr><p>Maintaining a regular routine that includes sufficient sleep, balanced meals, and consistent self-care can strengthen both physical and mental health, helping to regulate mood and energy throughout the day.</p></div>
+      <div class="card"><h3>Mindfulness</h3><hr><p>Practicing mindfulness through meditation, deep breathing exercises, or quiet reflection allows the mind to slow down, reduces anxiety, and fosters a sense of presence and calm even during stressful situations.</p></div>
+      <div class="card"><h3>Time Management</h3><hr><p>Organizing tasks, setting realistic goals, and breaking work into manageable steps can prevent overwhelm, reduce stress, and increase productivity in both personal and academic life.</p></div>
+      <div class="card"><h3>Talk to Someone</h3><hr><p>Sharing thoughts, concerns, or emotions with a trusted friend, family member, or mental health professional provides perspective, emotional relief, and practical support for navigating challenges.</p></div>
+      <div class="card"><h3>Physical Activity</h3><hr><p>Regular movement or exercise, such as walking, yoga, or team sports, not only improves physical health but also releases endorphins that boost mood and reduce stress.</p></div>
+      <div class="card"><h3>Engage in Relaxing Hobbies</h3><hr><p>Spending time on hobbies or creative activities, such as reading, drawing, cooking, or gardening, provides a healthy distraction from stress, encourages mindfulness, and promotes a sense of accomplishment and personal fulfillment.</p></div>
+    </div>
+    <img 
+      src="https://www.centralwestmedicalcentre.com.au/wp-content/uploads/2023/07/Mental-wellness-month.png"
+      class="center-img"
+      alt="Improve Well-Being"
+    >
+  </section>
+
+  <!-- FEEDBACK -->
+  <section id="feedback" class="fade-up">
+    <h2>Feedback📝</h2> 
+   <p><b>If you have any opinions, suggestions, or ideas for improvements that we could make, we would love to hear from you! Please share your thoughts with us!</b></p>
+    <form>
+      <input type="text" placeholder="Name (optional)">
+      <input type="email" placeholder="Email (optional)">
+      <select>
+        <option>Choose a page you viewed</option>
+        <option>What Is Mental Health?</option>
+        <option>Common Challenges</option>
+        <option>Improve Well-Being</option>
+      </select>
+      <textarea rows="5" placeholder="Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script>
+    const tabs = document.querySelectorAll("nav a");
+    const pages = document.querySelectorAll("section");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        // remove active from all pages & remove animation class
+        tabs.forEach(t => t.classList.remove("active"));
+        pages.forEach(p => {
+          p.classList.remove("active");
+          p.classList.remove("show"); 
+        });
+
+        // activate clicked tab + its page
+        tab.classList.add("active");
+        const page = document.getElementById(tab.dataset.page);
+        page.classList.add("active");
+
+        // small delay to trigger fade-up animation
+        setTimeout(() => page.classList.add("show"), 10);
+      });
+    });
+  </script>
+
+</body>
+</html>
